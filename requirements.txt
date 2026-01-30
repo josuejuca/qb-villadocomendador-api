@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+
+SQLAlchemy
+asyncpg
+
+pydantic
+pydantic-settings
+
+jinja2
+aiosmtplib
+email-validator
