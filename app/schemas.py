@@ -7,11 +7,13 @@ Satisfacao = Literal[
     "Indiferente",
     "Satisfeito",
     "Muito satisfeito",
+    "Não fui atendido por gerente",
+    "Não fui atendido por corretor",
 ]
 
 class NpsCreate(BaseModel):
     # OBRIGATÓRIOS
-    nome: str = Field(..., min_length=2, max_length=120)
+    nome: str = Field(..., min_length=1, max_length=120)
     email: EmailStr
     telefone: str = Field(..., min_length=8, max_length=40)
     imovel_unidade: str = Field(..., min_length=2, max_length=180)
